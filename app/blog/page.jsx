@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -88,7 +89,7 @@ export default function Blog() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {currentArticles.map((article) => (
             <div key={article.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img
+              <Image
                 src={article.image}
                 alt={article.title}
                 className="w-full h-48 object-cover"
@@ -97,7 +98,8 @@ export default function Blog() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">{article.title}</h3>
                 <p className="text-gray-700 text-sm mb-4">{article.description}</p>
                 <Link href={article.link} className="text-blue-600 hover:text-blue-800 text-sm">
-                  Lire l'article
+                {"Lire l'article"}
+                  
                 </Link>
               </div>
             </div>

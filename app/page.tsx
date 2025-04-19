@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { DM_Serif_Text } from 'next/font/google'
+import Image from 'next/image';
 
 const dMSerifText = DM_Serif_Text({
   weight: '400',
@@ -36,7 +37,7 @@ const destinations = [
 export default function Home() {
   return (
     <div>
-      
+
       {/* Hero Banner */}
       <section className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: 'url(/imgs/Nouvelle-Liberte-a-Douala-au-Cameroun.jpg)' }}>
         <div className="absolute inset-0 bg-black opacity-10"></div>
@@ -56,7 +57,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {destinations.map((destination) => (
             <div key={destination.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src={destination.image} alt={destination.nom} className="w-full h-64 object-cover" />
+              <Image src={destination.image} alt={destination.nom} className="w-full h-64 object-cover" />
               <div className="p-4">
                 <h3 className="text-xl font-semibold">{destination.nom}</h3>
                 <p className="text-sm text-gray-700 mt-2">{destination.description}</p>
@@ -86,7 +87,8 @@ export default function Home() {
             </Link>
           </div>
           <div className="md:w-1/2">
-            <img src="/imgs/ekom-nkam-waterfalls.jpg" alt="Culture et nature" className="w-full h-96 object-cover rounded-lg" />
+
+            <Image src="/imgs/ekom-nkam-waterfalls.jpg" alt="Culture et nature" className="w-full h-96 object-cover rounded-lg" />
           </div>
         </div>
       </section>
@@ -103,7 +105,7 @@ export default function Home() {
               Un voyage inoubliable à travers les paysages du Nord, entre savanes, traditions et découvertes humaines uniques...
             </p>
             <Link href="/blog/road-trip-nord-cameroun">
-              <span className="text-blue-600 text-sm font-medium hover:underline">Lire l'article →</span>
+              <span className="text-blue-600 text-sm font-medium hover:underline">{"Lire l'article →"}</span>
             </Link>
           </div>
 
@@ -114,7 +116,7 @@ export default function Home() {
               Découvrez les saveurs uniques du Cameroun à travers ses plats traditionnels emblématiques comme le ndolé, le poisson braisé, et plus encore...
             </p>
             <Link href="/blog/top-plats-camerounais">
-              <span className="text-blue-600 text-sm font-medium hover:underline">Lire l'article →</span>
+              <span className="text-blue-600 text-sm font-medium hover:underline">{"Lire l'article →"}</span>
             </Link>
           </div>
 
@@ -125,7 +127,7 @@ export default function Home() {
               Plongez dans cette fête traditionnelle Sawa célébrée à Douala : rites, danses, symboles et héritage culturel...
             </p>
             <Link href="/blog/ngondo-tradition">
-              <span className="text-blue-600 text-sm font-medium hover:underline">Lire l'article →</span>
+              <span className="text-blue-600 text-sm font-medium hover:underline">{"Lire l'article →"}</span>
             </Link>
           </div>
         </div>

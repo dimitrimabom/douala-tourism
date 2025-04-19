@@ -142,7 +142,7 @@ export default function RootLayout({
                       required
                     />
                     <button type="submit" className="bg-yellow-500 text-white px-6 py-2 rounded-md hover:bg-yellow-400">
-                      S'abonner
+                      {"S'abonner"}
                     </button>
                   </form>
                 </div>
