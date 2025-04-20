@@ -39,8 +39,8 @@ export default function Home() {
     <div>
 
       {/* Hero Banner */}
-      <section className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: 'url(/imgs/Nouvelle-Liberte-a-Douala-au-Cameroun.jpg)' }}>
-        <div className="absolute inset-0 bg-black opacity-10"></div>
+      <section className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: 'url(/imgs/cameroun_.webp)' }}>
+        <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="relative z-10 flex items-center justify-center h-full text-center text-white">
           <div>
             <h1 className={`${dMSerifText.className} text-4xl md:text-6xl font-bold mb-4`}>Découvrez le Cameroun, l’Afrique en miniature.</h1>
@@ -57,7 +57,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {destinations.map((destination) => (
             <div key={destination.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <Image src={destination.image} alt={destination.nom} className="w-full h-64 object-cover" />
+              <Image src={destination.image} alt={destination.nom} width={100} height={100} className="w-full h-64 object-cover" />
               <div className="p-4">
                 <h3 className="text-xl font-semibold">{destination.nom}</h3>
                 <p className="text-sm text-gray-700 mt-2">{destination.description}</p>
@@ -88,7 +88,7 @@ export default function Home() {
           </div>
           <div className="md:w-1/2">
 
-            <Image src="/imgs/ekom-nkam-waterfalls.jpg" alt="Culture et nature" className="w-full h-96 object-cover rounded-lg" />
+            <Image src="/imgs/ekom-nkam-waterfalls.jpg" alt="Culture et nature" width={60} height={60} className="w-full h-96 object-cover rounded-lg" />
           </div>
         </div>
       </section>
