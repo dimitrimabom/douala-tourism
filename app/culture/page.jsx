@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function CultureAndNature() {
   return (
-    <section className="py-16 px-6 bg-gray-100 mt-6">
+    <section className="pt-6 px-6 pb-16 bg-gray-100 ">
       <div className="max-w-6xl mx-auto">
         {/* Titre de la page */}
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">
@@ -32,36 +32,32 @@ export default function CultureAndNature() {
                 }
               </p>
               <Link
-                href="/blog"
+                href="/blog/plats-camerounais"
                 className="text-blue-600 hover:text-blue-800 text-sm"
               >
                 Découvrir nos recettes traditionnelles
               </Link>
             </div>
-            <div>
-              <Image
-                src="/images/ndole.jpg"
-                alt="Plat de Ndolé"
-                width={2000}
-                height={2000}
-                className="w-full h-72 object-cover rounded-lg shadow-lg"
-              />
-            </div>
+            <Image
+              src="/imgs/ndole.jpg"
+              alt="Plat de Ndolé"
+              width={2000}
+              height={2000}
+              className="w-full h-72 object-cover rounded-lg shadow-lg"
+            />
           </div>
         </section>
 
         {/* Section : Artisanat */}
         <section className="mb-16">
           <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8">
-            <div>
-              <Image
-                src="/images/artisanat.jpg"
-                alt="Sculpture artisanale"
-                width={2000}
-                height={2000}
-                className="w-full h-72 object-cover rounded-lg shadow-lg"
-              />
-            </div>
+            <Image
+              src="/imgs/artisanat.jpg"
+              alt="Sculpture artisanale"
+              width={2000}
+              height={2000}
+              className="w-full h-72 object-cover rounded-lg shadow-lg"
+            />
             <div>
               <h2 className="text-3xl font-semibold text-gray-800 mb-6">
                 Artisanat Camerounais
@@ -72,7 +68,7 @@ export default function CultureAndNature() {
                 }
               </p>
               <Link
-                href="/blog"
+                href="/blog/artisanat-camerounais"
                 className="text-blue-600 hover:text-blue-800 text-sm"
               >
                 {"Explorer l'artisanat camerounais"}
@@ -94,36 +90,33 @@ export default function CultureAndNature() {
                 }
               </p>
               <Link
-                href="/blog"
+                href="/blog/faune-flore-cameroun"
                 className="text-blue-600 hover:text-blue-800 text-sm"
               >
                 En savoir plus sur la faune et la flore
               </Link>
             </div>
-            <div>
-              <Image
-                src="/images/faune-flore.jpg"
-                alt="Faune et flore camerounaises"
-                width={2000}
-                height={2000}
-                className="w-full h-72 object-cover rounded-lg shadow-lg"
-              />
-            </div>
+
+            <Image
+              src="/imgs/faune-flore.png"
+              alt="Faune et flore camerounaises"
+              width={2000}
+              height={2000}
+              className="w-full h-72 object-cover rounded-lg shadow-lg"
+            />
           </div>
         </section>
 
         {/* Section : Fêtes et Traditions */}
         <section className="mb-16">
           <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8">
-            <div>
-              <Image
-                src="/images/fete.jpg"
-                alt="Fête traditionnelle au Cameroun"
-                width={2000}
-                height={2000}
-                className="w-full h-72 object-cover rounded-lg shadow-lg"
-              />
-            </div>
+            <Image
+              src="/imgs/fete.jpg"
+              alt="Fête traditionnelle au Cameroun"
+              width={2000}
+              height={2000}
+              className="w-full h-72 object-cover rounded-lg shadow-lg"
+            />
             <div>
               <h2 className="text-3xl font-semibold text-gray-800 mb-6">
                 Fêtes et Traditions
@@ -134,7 +127,7 @@ export default function CultureAndNature() {
                 }
               </p>
               <Link
-                href="/blog"
+                href="/blog/fetes-camerounaises"
                 className="text-blue-600 hover:text-blue-800 text-sm"
               >
                 Découvrez les fêtes camerounaises

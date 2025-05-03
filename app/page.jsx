@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { DM_Serif_Text } from "next/font/google";
 import Image from "next/image";
+import Breadcrumb from "@/components/Breadcrumb";
 
 const dMSerifText = DM_Serif_Text({
   weight: "400",
@@ -59,9 +60,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Breadcrumb />
 
       {/* Destinations populaires */}
-      <section className="w-full py-16 px-4 bg-gray-100 flex items-center justify-center">
+      <section className="w-full pb-10 px-4 bg-gray-100 flex items-center justify-center">
         <div className="max-w-7xl">
           <h2 className="text-4xl font-bold text-center mb-8">
             Destinations populaires
@@ -107,7 +109,7 @@ export default function Home() {
       </section>
 
       {/* Culture & Nature */}
-      <section className=" py-16 px-4 flex items-center justify-center">
+      <section className=" pb-10 px-4 flex items-center justify-center">
         <div className="max-w-7xl">
           <h2 className="text-4xl font-bold text-center mb-8">
             Culture & Nature

@@ -1,12 +1,7 @@
-'use client'
+"use client";
 
-import React from 'react';
+import React from "react";
 
 export default function Planifier() {
-
-  return (
-    <section className="py-16 px-6 bg-gray-200">
-      Planifier
-    </section>
-  );
+  return <section className="pt-6 px-6 pb-16 bg-gray-200">Planifier</section>;
 }

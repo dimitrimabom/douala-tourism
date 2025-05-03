@@ -10,7 +10,7 @@ const allArticles = [
     title: "Mon road trip au Nord Cameroun",
     description:
       "Un voyage épique à travers le Nord du Cameroun, avec des paysages à couper le souffle, des rencontres inoubliables et des moments uniques à partager.",
-    image: "/images/road-trip.jpg",
+    image: "/imgs/road-trip.png",
     link: "/blog/road-trip-nord-cameroun",
   },
   {
@@ -18,7 +18,7 @@ const allArticles = [
     title: "Top 5 des plats camerounais à goûter",
     description:
       "Découvrez les saveurs authentiques du Cameroun à travers ses plats incontournables. Un voyage culinaire qui ravira vos papilles !",
-    image: "/images/plats-camerounais.jpg",
+    image: "/imgs/plats-camerounais.jpg",
     link: "/blog/plats-camerounais",
   },
   {
@@ -26,7 +26,7 @@ const allArticles = [
     title: "Les fêtes traditionnelles du Cameroun",
     description:
       "Plongez dans les fêtes traditionnelles camerounaises, des célébrations colorées, pleines de musique, de danse et de rituels ancestraux.",
-    image: "/images/fetes-camerounaises.jpg",
+    image: "/imgs/fete.jpg",
     link: "/blog/fetes-camerounaises",
   },
   {
@@ -34,7 +34,7 @@ const allArticles = [
     title: "Découverte du Mont Cameroun : Le sommet de l’Afrique centrale",
     description:
       "Une aventure unique au sommet du Mont Cameroun, où l’histoire et la nature se rencontrent dans un spectacle incroyable.",
-    image: "/images/mont-cameroun.jpg",
+    image: "/imgs/mont-cameroun.jpg",
     link: "/blog/decouverte-mont-cameroun",
   },
   {
@@ -43,7 +43,7 @@ const allArticles = [
       "Visite des parcs nationaux du Cameroun : Une immersion dans la faune",
     description:
       "Explorez la richesse de la faune camerounaise en visitant les parcs nationaux, un paradis pour les amoureux de la nature.",
-    image: "/images/parc-national.jpg",
+    image: "/imgs/parc-national.jpg",
     link: "/blog/parcs-nationaux-cameroun",
   },
   {
@@ -51,7 +51,7 @@ const allArticles = [
     title: "Kribi : Une escapade au bord de la mer",
     description:
       "Plongez dans la beauté des plages de Kribi, un lieu parfait pour se détendre et profiter des paysages magnifiques.",
-    image: "/images/kribi.jpg",
+    image: "/imgs/kribi.webp",
     link: "/blog/escapade-kribi",
   },
   {
@@ -59,9 +59,26 @@ const allArticles = [
     title: "Voyager au Cameroun : 10 conseils pratiques pour les touristes",
     description:
       "Voici des conseils pratiques pour rendre votre voyage au Cameroun agréable, de la sécurité aux astuces locales.",
-    image: "/images/conseils-voyage.jpg",
+    image: "/imgs/conseils-voyage.webp",
     link: "/blog/conseils-voyage-cameroun",
   },
+  {
+    id: 8,
+    title: "L'artisanat camerounais : entre tradition et créativité",
+    description:
+      "Découvrez la richesse de l’artisanat camerounais, où savoir-faire ancestral et expression moderne se rencontrent à travers des objets uniques.",
+    image: "/imgs/artisanat.jpg",
+    link: "/blog/artisanat-camerounais",
+  },
+  {
+    id: 9,
+    title: "Faune et flore du Cameroun : une biodiversité exceptionnelle",
+    description:
+      "Explorez la richesse naturelle du Cameroun, un pays où savane, forêt et montagne abritent une incroyable variété d’espèces animales et végétales.",
+    image: "/imgs/faune-flore.png",
+    link: "/blog/faune-flore-cameroun",
+  },
+
   // Ajoute plus d'articles si nécessaire
 ];
 
@@ -86,7 +103,7 @@ export default function Blog() {
   };
 
   return (
-    <section className="py-16 px-6 bg-gray-100 mt-6">
+    <section className="pt-6 px-6 pb-16 bg-gray-100 ">
       <div className="max-w-6xl mx-auto">
         {/* Titre de la page */}
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">
