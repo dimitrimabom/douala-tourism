@@ -53,14 +53,6 @@ export default function DestinationDetail() {
         <p className="text-xl text-gray-600 mb-6">{destination.description}</p>
         <p className="text-lg text-gray-700">{destination.content}</p>
       </div>
-
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23552.622529765446!2d9.900700739807858!3d2.9388867278370956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1062fd787fba5b3b%3A0x15523ec96fcf7000!2sKribi!5e0!3m2!1sfr!2scm!4v1746278801111!5m2!1sfr!2scm"
-        width="100%"
-        height="100%"
-        loading="lazy"
-        className="border-0"
-      ></iframe>
     </section>
   );
 }
