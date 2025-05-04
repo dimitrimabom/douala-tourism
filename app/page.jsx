@@ -63,7 +63,7 @@ export default function Home() {
       <Breadcrumb />
 
       {/* Destinations populaires */}
-      <section className="w-full pb-10 px-4 bg-gray-100 flex items-center justify-center">
+      <section className="w-full pb-10 px-4 bg-gray-100 flex items-center justify-center pt-6">
         <div className="max-w-7xl">
           <h2 className="text-4xl font-bold text-center mb-8">
             Destinations populaires
@@ -109,7 +109,7 @@ export default function Home() {
       </section>
 
       {/* Culture & Nature */}
-      <section className=" pb-10 px-4 flex items-center justify-center">
+      <section className=" pb-14 px-4 flex items-center justify-center  pt-12">
         <div className="max-w-7xl">
           <h2 className="text-4xl font-bold text-center mb-8">
             Culture & Nature

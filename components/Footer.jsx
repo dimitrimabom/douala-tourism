@@ -1,8 +1,22 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { Facebook, Instagram, Twitter } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+
+  const pathname = usePathname();
+
+  const isActive = (path) => pathname === path;
+
+  const linkClass = (path) =>
+    `hover:text-yellow-500 ${
+      isActive(path) ? "text-yellow-500 font-semibold" : ""
+    }`;
+
+
   return (
     <footer className="bg-gray-800 text-white py-8">
       <div className="max-w-7xl mx-auto px-6">
@@ -13,24 +27,22 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link href="/">
-                  <span className="hover:text-yellow-500">Accueil</span>
+                  <span className={linkClass("/")}>Accueil</span>
                 </Link>
               </li>
               <li>
                 <Link href="/destinations">
-                  <span className="hover:text-yellow-500">Destinations</span>
+                  <span className={linkClass("/destinations")}>Destinations</span>
                 </Link>
               </li>
               <li>
                 <Link href="/culture">
-                  <span className="hover:text-yellow-500">
-                    Culture & Nature
-                  </span>
+                  <span className={linkClass("/culture")}>Culture & Nature</span>
                 </Link>
               </li>
               <li>
                 <Link href="/blog">
-                  <span className="hover:text-yellow-500">Blog</span>
+                  <span className={linkClass("/blog")}>Blog</span>
                 </Link>
               </li>
             </ul>

@@ -50,8 +50,9 @@ export default function Destinations() {
   );
 
   return (
-    <section className="pt-6 px-6 pb-16 bg-gray-100">
-      <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">
+    <section className="pt-6 px-6 pb-16 bg-gray-100 flex items-center justify-center">
+      <div className="max-w-7xl">
+        <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">
         Nos Destinations
       </h1>
 
@@ -104,6 +105,7 @@ export default function Destinations() {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );
