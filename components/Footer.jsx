@@ -6,7 +6,6 @@ import { Facebook, Instagram, Twitter } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 const Footer = () => {
-
   const pathname = usePathname();
 
   const isActive = (path) => pathname === path;
@@ -15,7 +14,6 @@ const Footer = () => {
     `hover:text-yellow-500 ${
       isActive(path) ? "text-yellow-500 font-semibold" : ""
     }`;
-
 
   return (
     <footer className="bg-gray-800 text-white py-8">
@@ -32,12 +30,16 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="/destinations">
-                  <span className={linkClass("/destinations")}>Destinations</span>
+                  <span className={linkClass("/destinations")}>
+                    Destinations
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link href="/culture">
-                  <span className={linkClass("/culture")}>Culture & Nature</span>
+                  <span className={linkClass("/culture")}>
+                    Culture & Nature
+                  </span>
                 </Link>
               </li>
               <li>
@@ -67,7 +69,7 @@ const Footer = () => {
                   href="tel:+237123456789"
                   className="hover:text-yellow-500"
                 >
-                  +237 12 34 56 78 9
+                  +237 6 97 47 31 15
                 </Link>
               </li>
               <li>Adresse : Yaoundé, Cameroun</li>

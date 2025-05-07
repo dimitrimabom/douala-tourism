@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <div className="flex items-center justify-center flex-col">
       {/* Hero Banner */}
-      <section className="relative w-full h-full py-64 bg-[url(/imgs/cameroun_.webp)] bg-cover bg-center">
+      <section className="relative w-full h-full py-64 bg-[url(/imgs/Momument-de-la-reunification.jpg)] bg-cover bg-center">
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="relative z-10 flex items-center justify-center h-full text-center text-white">
           <div className="flex flex-col gap-6">
@@ -83,11 +83,11 @@ export default function Home() {
                 />
                 <div className="p-4">
                   <h3 className="text-xl font-semibold">{destination.nom}</h3>
-                  <p className="text-sm text-gray-700 mt-2">
-                    {destination.description}
-                  </p>
                   <p className="text-xs text-gray-500 mt-1">
                     {destination.localisation}
+                  </p>
+                  <p className="text-sm text-gray-700 mt-2">
+                    {destination.description}
                   </p>
                   <Link href={destination.lien}>
                     <span className="text-blue-500 text-sm mt-2 inline-block hover:underline">

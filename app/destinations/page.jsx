@@ -53,59 +53,59 @@ export default function Destinations() {
     <section className="pt-6 px-6 pb-16 bg-gray-100 flex items-center justify-center">
       <div className="max-w-7xl">
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">
-        Nos Destinations
-      </h1>
+          Nos Destinations
+        </h1>
 
-      {/* Filtres de catégorie */}
-      <div className="text-center mb-8">
-        <div className="inline-flex gap-6">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-              className={`${
-                selectedCategory === category
-                  ? "text-blue-600 border-b-2 border-blue-600"
-                  : "text-gray-600"
-              } text-lg font-semibold hover:text-blue-600 transition-colors`}
+        {/* Filtres de catégorie */}
+        <div className="text-center mb-8">
+          <div className="inline-flex gap-6">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setSelectedCategory(category)}
+                className={`${
+                  selectedCategory === category
+                    ? "text-blue-600 border-b-2 border-blue-600"
+                    : "text-gray-600"
+                } text-lg font-semibold hover:text-blue-600 transition-colors`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Liste des destinations */}
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {filteredDestinations.map((destination) => (
+            <div
+              key={destination.id}
+              className="bg-white rounded-lg shadow-lg overflow-hidden"
             >
-              {category}
-            </button>
+              <Image
+                src={destination.image}
+                alt={destination.nom}
+                width={2000}
+                height={2000}
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold">{destination.nom}</h3>
+                <p className="text-xs text-gray-500 mt-1">
+                  {destination.localisation}
+                </p>
+                <p className="text-sm text-gray-700 mt-2">
+                  {destination.description}
+                </p>
+                <Link href={destination.lien}>
+                  <span className="text-blue-500 text-sm mt-2 inline-block hover:underline">
+                    Voir plus
+                  </span>
+                </Link>
+              </div>
+            </div>
           ))}
         </div>
-      </div>
-
-      {/* Liste des destinations */}
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {filteredDestinations.map((destination) => (
-          <div
-            key={destination.id}
-            className="bg-white rounded-lg shadow-lg overflow-hidden"
-          >
-            <Image
-              src={destination.image}
-              alt={destination.nom}
-              width={2000}
-              height={2000}
-              className="w-full h-64 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold">{destination.nom}</h3>
-              <p className="text-sm text-gray-700 mt-2">
-                {destination.description}
-              </p>
-              <p className="text-xs text-gray-500 mt-1">
-                {destination.localisation}
-              </p>
-              <Link href={destination.lien}>
-                <span className="text-blue-500 text-sm mt-2 inline-block hover:underline">
-                  Voir plus
-                </span>
-              </Link>
-            </div>
-          </div>
-        ))}
-      </div>
       </div>
     </section>
   );
